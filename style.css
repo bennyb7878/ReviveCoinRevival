@@ -1,85 +1,130 @@
+:root {
+    --dark-bg: #0a0a0a;
+    --neon-blue: #00f3ff;
+    --neon-purple: #bc13fe;
+    --neon-green: #39ff14;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+}
+
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
 
+/* Neon Text Effects */
+.neon-text {
+    text-shadow: 0 0 10px var(--neon-blue),
+                 0 0 20px var(--neon-purple),
+                 0 0 30px var(--neon-green);
+}
+
+.neon-border {
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 15px var(--neon-purple),
+                inset 0 0 15px var(--neon-green);
+    border-radius: 8px;
+}
+
+/* Header Styles */
 header {
-    background-color: #181818;
-    padding: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    height: 50px;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 nav {
-    display: inline-block;
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    gap: 2rem;
 }
 
-.nav-links li {
-    display: inline;
-    margin-left: 20px;
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    padding: 4rem 2rem;
 }
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
+.hero-content {
+    max-width: 600px;
+}
+
+.phoenix-animation {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Tokenomics Grid */
+.tokenomics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.distribution-chart {
+    display: grid;
+    gap: 1rem;
+}
+
+.chart-item {
+    background: linear-gradient(90deg, var(--neon-purple) var(--percentage), transparent 0%);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .tokenomics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.neon-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px var(--neon-blue);
+    transition: all 0.3s ease;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #000000;
-    background-color: #00ff00;
-    text-decoration: none;
-    border-radius: 5px;
+    background: var(--neon-green);
+    color: var(--dark-bg);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
-#hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-}
-
-.hero-image {
-    margin-top: 20px;
-}
-
-#about, #tokenomics, #roadmap, #presale, #community {
-    padding: 60px 20px;
-}
-
-h2 {
-    color: #00ff00;
-}
-
-.key-features, .tokenomics-details ul, .community-links, .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.key-features li, .tokenomics-details ul li, .community-links a, .footer-links a {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #181818;
-    text-align: center;
-    padding: 20px 0;
-}
+.cta-button:hover {
+    box-shadow: 0 0 25px var(--neon-green);
+    transform: scale(1.05);
+} 
