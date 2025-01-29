@@ -1,232 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Previous meta tags and links -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/web3@1.9.0/dist/web3.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReviveCoin (RVN) - Rebirth of DeFi</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join the revolution in decentralized finance with ReviveCoin (RVN) - a token designed for growth, community, and innovation.">
+    <meta name="keywords" content="ReviveCoin, RVN, DeFi, cryptocurrency, blockchain, presale, tokenomics">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="ReviveCoin (RVN) - Rebirth of DeFi">
+    <meta property="og:description" content="Join the DeFi revolution with ReviveCoin's community-driven cryptocurrency project">
+    <meta property="og:image" content="images/revivecoin-og.jpg">
 </head>
 <body>
-    <!-- Header with Wallet Integration -->
-    <header class="header">
-        <div class="container">
+    <!-- Header -->
+    <header class="neon-border">
+        <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="ReviveCoin Logo">
-                <span>ReviveCoin (RVN)</span>
+                <img src="logo.svg" alt="ReviveCoin Logo">
+                <span>RVN</span>
             </div>
-            <nav class="nav-links">
-                <!-- Existing nav items -->
-                <button id="connectWallet" class="wallet-button">
-                    <i class="fas fa-wallet"></i>
-                    <span>Connect Wallet</span>
-                </button>
-                <button id="themeToggle" class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="language-switcher">
-                    <select id="languageSelect">
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                        <option value="zh">中文</option>
-                    </select>
-                </div>
-            </nav>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#presale">Presale</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <button class="cta-button">Join Presale</button>
+        </nav>
     </header>
 
-    <!-- Enhanced Hero Section with GSAP Animation -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <!-- Animated elements -->
+        <div class="hero-content">
+            <h1 class="neon-text">ReviveCoin (RVN)</h1>
+            <h2>Rebirth of DeFi</h2>
+            <p class="subtitle">Join the revolution in decentralized finance with a token designed for growth, community, and innovation</p>
+            <div class="hero-buttons">
+                <button class="cta-button">Join Presale</button>
+                <button class="secondary-button">Learn More</button>
             </div>
+        </div>
+        <div class="hero-visual">
+            <img src="phoenix-animation.gif" alt="Phoenix Rising Animation" class="phoenix-animation">
         </div>
     </section>
 
-    <!-- Complete About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="about_title">About ReviveCoin</h2>
-            <div class="mission-vision-grid">
-                <div class="mission-card">
-                    <h3 data-i18n="mission">Mission</h3>
-                    <p data-i18n="mission_text">To rejuvenate DeFi through community-driven innovation</p>
+    <!-- About Section -->
+    <section id="about" class="section-dark">
+        <div class="section-content">
+            <h2>About ReviveCoin</h2>
+            <div class="about-grid">
+                <div class="about-card neon-hover">
+                    <h3>Mission</h3>
+                    <p>Rejuvenate the DeFi ecosystem through community engagement and sustainable growth</p>
                 </div>
-                <!-- Add vision and values cards -->
-            </div>
-            <div class="team-grid">
-                <!-- Team members with animations -->
+                <div class="about-card neon-hover">
+                    <h3>Vision</h3>
+                    <p>Create a thriving DeFi space where innovation benefits all participants</p>
+                </div>
+                <div class="about-card neon-hover">
+                    <h3>Security</h3>
+                    <p>Rigorous audits and best-in-class blockchain security measures</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Tokenomics Section -->
-    <section id="tokenomics" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="tokenomics_title">Tokenomics</h2>
-            <div class="tokenomics-chart">
-                <canvas id="tokenChart"></canvas>
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section-dark">
+        <div class="section-content">
+            <h2>Tokenomics</h2>
+            <div class="tokenomics-grid">
+                <div class="distribution-chart">
+                    <div class="chart-item" style="--percentage:40%">
+                        <span>Public Sale: 40%</span>
+                    </div>
+                    <div class="chart-item" style="--percentage:20%">
+                        <span>Team/Advisors: 20%</span>
+                    </div>
+                    <div class="chart-item" style="--percentage:10%">
+                        <span>Marketing: 10%</span>
+                    </div>
+                    <div class="chart-item" style="--percentage:15%">
+                        <span>Development: 15%</span>
+                    </div>
+                    <div class="chart-item" style="--percentage:15%">
+                        <span>Staking/Rewards: 15%</span>
+                    </div>
+                </div>
+                <div class="tax-info">
+                    <div class="tax-box neon-border">
+                        <h3>Buy Tax: 2%</h3>
+                        <p>1% Liquidity<br>1% Marketing</p>
+                    </div>
+                    <div class="tax-box neon-border">
+                        <h3>Sell Tax: 3%</h3>
+                        <p>1% Liquidity<br>1% Marketing<br>1% Development</p>
+                    </div>
+                </div>
             </div>
-            <!-- Tax structure with animations -->
         </div>
     </section>
 
-    <!-- Animated Roadmap Section -->
-    <section id="roadmap" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="roadmap_title">Roadmap</h2>
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section-dark">
+        <div class="section-content">
+            <h2>Roadmap</h2>
             <div class="timeline">
-                <!-- Interactive roadmap items -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2025</div>
+                    <div class="timeline-content neon-hover">
+                        <h3>Project Initiation</h3>
+                        <p>Token creation and smart contract development</p>
+                    </div>
+                </div>
+                <!-- Add more timeline items -->
             </div>
         </div>
     </section>
 
-    <!-- Presale Section with Payment Gateway -->
-    <section id="presale" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="presale_title">Presale</h2>
-            <div class="presale-box">
-                <div class="payment-options">
-                    <div class="crypto-payment">
-                        <button class="payment-method" data-chain="ethereum">
-                            <img src="images/eth-logo.png" alt="Ethereum">
-                        </button>
-                        <!-- Add other chain buttons -->
-                    </div>
-                    <div class="credit-card-payment">
-                        <form id="fiatForm">
-                            <!-- Credit card form -->
-                        </form>
-                    </div>
+    <!-- Presale Section -->
+    <section id="presale" class="section-dark">
+        <div class="section-content">
+            <h2>Presale Details</h2>
+            <div class="presale-info">
+                <div class="presale-card neon-border">
+                    <h3>Presale Starts</h3>
+                    <p class="neon-text">29/01/2025</p>
+                </div>
+                <div class="presale-card neon-border">
+                    <h3>Token Price</h3>
+                    <p class="neon-text">0.05 USDC</p>
+                </div>
+                <div class="presale-card neon-border">
+                    <button class="cta-button">Participate Now</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="blog_title">Latest News</h2>
-            <div class="blog-grid">
-                <article class="blog-post">
-                    <h3 data-i18n="post1_title">Presale Announcement</h3>
-                    <p data-i18n="post1_excerpt">Join our presale starting January 2025...</p>
-                </article>
-                <!-- Add more posts -->
+    <!-- Footer -->
+    <footer class="neon-border">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>contact@revivecoin.com</p>
             </div>
-        </div>
-    </section>
-
-    <!-- User Dashboard (Visible when connected) -->
-    <section id="dashboard" class="section hidden">
-        <div class="container">
-            <h2 class="section-title" data-i18n="dashboard_title">My Dashboard</h2>
-            <div class="dashboard-grid">
-                <div class="wallet-info">
-                    <h3 data-i18n="wallet_balance">Wallet Balance</h3>
-                    <p><span id="rvnBalance">0</span> RVN</p>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <p>Disclaimer & Risk Warning</p>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <div class="social-links">
+                    <a href="#" class="neon-hover">Twitter</a>
+                    <a href="#" class="neon-hover">Telegram</a>
+                    <a href="#" class="neon-hover">Discord</a>
                 </div>
-                <!-- Add staking and transaction sections -->
             </div>
         </div>
-    </section>
-
-    <!-- Language and Theme Scripts -->
-    <script>
-        // GSAP Animations
-        gsap.registerPlugin(ScrollTrigger);
-        
-        gsap.from(".hero-content", {
-            duration: 1,
-            y: 100,
-            opacity: 0,
-            ease: "power4.out"
-        });
-
-        // Animate on scroll
-        gsap.utils.toArray(".section").forEach(section => {
-            gsap.from(section, {
-                scrollTrigger: {
-                    trigger: section,
-                    start: "top 80%"
-                },
-                opacity: 0,
-                y: 50,
-                duration: 1
-            });
-        });
-
-        // Wallet Integration
-        async function connectWallet() {
-            if (typeof window.ethereum !== 'undefined') {
-                try {
-                    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-                    document.getElementById('connectWallet').innerHTML = `<i class="fas fa-check"></i> ${accounts[0].slice(0,6)}...`;
-                    document.getElementById('dashboard').classList.remove('hidden');
-                } catch (error) {
-                    console.error(error);
-                }
-            } else {
-                alert('Please install MetaMask!');
-            }
-        }
-
-        // Theme Toggle
-        function toggleTheme() {
-            document.body.classList.toggle('light-theme');
-            localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
-        }
-
-        // Language Support
-        const translations = {
-            en: { /* English texts */ },
-            es: { /* Spanish translations */ },
-            zh: { /* Chinese translations */ }
-        };
-
-        function updateLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                el.textContent = translations[lang][key];
-            });
-        }
-
-        // Initialize
-        document.getElementById('connectWallet').addEventListener('click', connectWallet);
-        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
-        document.getElementById('languageSelect').addEventListener('change', (e) => {
-            updateLanguage(e.target.value);
-        });
-
-        // Initialize theme
-        if (localStorage.getItem('theme') === 'light') {
-            document.body.classList.add('light-theme');
-        }
-    </script>
-
-    <!-- Payment Gateway Integration (Example using Coinbase Commerce) -->
-    <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
-    <script>
-        function launchCoinbaseCheckout(amount) {
-            window.CoinbaseCommerce.CCBtn({
-                charge: {
-                    name: 'RVN Presale',
-                    description: 'ReviveCoin Token Purchase',
-                    pricing_type: 'fixed_price',
-                    local_price: {
-                        amount: amount,
-                        currency: 'USD'
-                    }
-                }
-            }, {
-                async onChargeFailure() {
-                    alert('Payment failed');
-                },
-                async onChargeSuccess() {
-                    alert('Payment successful!');
-                }
-            });
-        }
-    </script>
+    </footer>
 </body>
-</html>
+</html> 
