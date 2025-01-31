@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReviveCoin (RVN) - Rebirth of DeFi</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <!-- SEO Meta Tags -->
     <meta name="description" content="Join the revolution in decentralized finance with ReviveCoin (RVN) - a token designed for growth, community, and innovation.">
     <meta name="keywords" content="ReviveCoin, RVN, DeFi, cryptocurrency, blockchain, presale, tokenomics">
@@ -18,7 +19,7 @@
     <header class="neon-border">
         <nav>
             <div class="logo">
-                <img src="logo.svg" alt="ReviveCoin Logo">
+                <img src="assets/logo.webp" alt="ReviveCoin logo - Phoenix rising from blockchain symbols" width="120" height="40">
                 <span>RVN</span>
             </div>
             <ul class="nav-links">
@@ -28,7 +29,15 @@
                 <li><a href="#presale">Presale</a></li>
                 <li><a href="#community">Community</a></li>
             </ul>
-            <button class="cta-button">Join Presale</button>
+            <button id="connectWallet" class="cta-button">
+                <span class="wallet-icon"></span>
+                Connect Wallet
+            </button>
+            <button class="mobile-menu-toggle" aria-label="Mobile menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
         </nav>
     </header>
 
@@ -36,15 +45,18 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="neon-text">ReviveCoin (RVN)</h1>
-            <h2>Rebirth of DeFi</h2>
-            <p class="subtitle">Join the revolution in decentralized finance with a token designed for growth, community, and innovation</p>
+            <h2 class="subtitle">Rebirth of DeFi</h2>
+            <p>Join the revolution in decentralized finance with a token designed for growth, community, and innovation.</p>
             <div class="hero-buttons">
                 <button class="cta-button">Join Presale</button>
                 <button class="secondary-button">Learn More</button>
             </div>
         </div>
         <div class="hero-visual">
-            <img src="phoenix-animation.gif" alt="Phoenix Rising Animation" class="phoenix-animation">
+            <img src="assets/phoenix-vector.svg" 
+                 alt="Abstract phoenix rising illustration"
+                 class="phoenix-animation"
+                 loading="lazy">
         </div>
     </section>
 
@@ -53,15 +65,24 @@
         <div class="section-content">
             <h2>About ReviveCoin</h2>
             <div class="about-grid">
-                <div class="about-card neon-hover">
+                <div class="about-card neon-border neon-hover">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m9-9v18m0-9h9m-18 0h9"/>
+                    </svg>
                     <h3>Mission</h3>
                     <p>Rejuvenate the DeFi ecosystem through community engagement and sustainable growth</p>
                 </div>
-                <div class="about-card neon-hover">
+                <div class="about-card neon-border neon-hover">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12a2 2 0 1 0 4 0a2 2 0 1 0-4 0M12 18c-3.6 0-6.6-2-9-6c2.4-4 5.4-6 9-6c3.6 0 6.6 2 9 6"/>
+                    </svg>
                     <h3>Vision</h3>
                     <p>Create a thriving DeFi space where innovation benefits all participants</p>
                 </div>
-                <div class="about-card neon-hover">
+                <div class="about-card neon-border neon-hover">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0m5.001 3.001l1.999 1.999l3-3m-6 0h6"/>
+                    </svg>
                     <h3>Security</h3>
                     <p>Rigorous audits and best-in-class blockchain security measures</p>
                 </div>
@@ -72,33 +93,29 @@
     <!-- Tokenomics Section -->
     <section id="tokenomics" class="section-dark">
         <div class="section-content">
-            <h2>Tokenomics</h2>
+            <h2>ReviveCoin Tokenomics</h2>
             <div class="tokenomics-grid">
-                <div class="distribution-chart">
-                    <div class="chart-item" style="--percentage:40%">
-                        <span>Public Sale: 40%</span>
-                    </div>
-                    <div class="chart-item" style="--percentage:20%">
-                        <span>Team/Advisors: 20%</span>
-                    </div>
-                    <div class="chart-item" style="--percentage:10%">
-                        <span>Marketing: 10%</span>
-                    </div>
-                    <div class="chart-item" style="--percentage:15%">
-                        <span>Development: 15%</span>
-                    </div>
-                    <div class="chart-item" style="--percentage:15%">
-                        <span>Staking/Rewards: 15%</span>
+                <div class="tokenomics-card neon-border">
+                    <svg class="token-icon" aria-hidden="true">
+                        <!-- Download and insert actual SVG path from FlatIcon -->
+                        <path d="M12 2L3 5v6.09c0 5.05 3.41 9.76 8.55 10.91..."/>
+                    </svg>
+                    <h3>Distribution</h3>
+                    <div class="tokenomics-details">
+                        <p>Public Sale: 40%</p>
+                        <p>Team/Advisors: 20% (1 year lockup)</p>
+                        <p>Marketing: 10%</p>
+                        <p>Development: 15%</p>
+                        <p>Staking/Rewards: 15%</p>
+                        <div class="tokenomics-chart skeleton-loader"></div>
                     </div>
                 </div>
-                <div class="tax-info">
-                    <div class="tax-box neon-border">
-                        <h3>Buy Tax: 2%</h3>
-                        <p>1% Liquidity<br>1% Marketing</p>
-                    </div>
-                    <div class="tax-box neon-border">
-                        <h3>Sell Tax: 3%</h3>
-                        <p>1% Liquidity<br>1% Marketing<br>1% Development</p>
+                <div class="tokenomics-card neon-border">
+                    <h3>Taxes</h3>
+                    <div class="tokenomics-details">
+                        <p>Buy Tax: 2%</p>
+                        <p>Sell Tax: 3%</p>
+                        <p>Total Supply: 10,000,000 RVN</p>
                     </div>
                 </div>
             </div>
@@ -108,16 +125,77 @@
     <!-- Roadmap Section -->
     <section id="roadmap" class="section-dark">
         <div class="section-content">
-            <h2>Roadmap</h2>
+            <h2>Our Journey to Revive DeFi</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">Q1 2025</div>
                     <div class="timeline-content neon-hover">
                         <h3>Project Initiation</h3>
-                        <p>Token creation and smart contract development</p>
+                        <ul>
+                            <li>Token Creation on Solana</li>
+                            <li>Smart Contract Development & Testing</li>
+                            <li>Website Launch</li>
+                            <li>Community Building</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Add more timeline items -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2 2025</div>
+                    <div class="timeline-content neon-hover">
+                        <h3>Presale & Community Growth</h3>
+                        <ul>
+                            <li>Presale Launch</li>
+                            <li>Marketing Campaign</li>
+                            <li>Smart Contract Audit</li>
+                            <li>Liquidity Provision</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q3 2025</div>
+                    <div class="timeline-content neon-hover">
+                        <h3>Token Launch & Ecosystem Development</h3>
+                        <ul>
+                            <li>Token Listing on DEXs/CEXs</li>
+                            <li>Staking Platform Launch</li>
+                            <li>Strategic Partnerships</li>
+                            <li>First Major Update (Community Driven)</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">Q4 2025</div>
+                    <div class="timeline-content neon-hover">
+                        <h3>Expansion & Utility</h3>
+                        <ul>
+                            <li>DeFi Application Integrations</li>
+                            <li>Community Governance Implementation</li>
+                            <li>Cross-Chain Exploration</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">Q1 2026</div>
+                    <div class="timeline-content neon-hover">
+                        <h3>Sustainability & Innovation</h3>
+                        <ul>
+                            <li>Sustainability Initiatives (Buyback & Burn)</li>
+                            <li>Innovative DeFi Tools/NFT Integration</li>
+                            <li>Community Events (Virtual & Real-world)</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">Beyond 2026</div>
+                    <div class="timeline-content neon-hover">
+                        <h3>Continuous Growth</h3>
+                        <ul>
+                            <li>Ecosystem Expansion</li>
+                            <li>Global Reach & Localization</li>
+                            <li>Emerging Tech Integration</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -125,7 +203,7 @@
     <!-- Presale Section -->
     <section id="presale" class="section-dark">
         <div class="section-content">
-            <h2>Presale Details</h2>
+            <h2>Join the ReviveCoin Presale</h2>
             <div class="presale-info">
                 <div class="presale-card neon-border">
                     <h3>Presale Starts</h3>
@@ -142,26 +220,80 @@
         </div>
     </section>
 
+    <!-- Community Section -->
+    <section id="community" class="section-dark">
+        <div class="section-content community-content">
+            <h2>Join Our Community</h2>
+            <p>Stay updated on the latest news and developments. Join our vibrant community!</p>
+            <div class="social-links">
+                <a href="https://twitter.com/ReviveCoin" class="neon-hover" aria-label="Twitter">
+                    Twitter
+                </a>
+                <a href="https://t.me/ReviveCoinOfficial" class="neon-hover" aria-label="Telegram">
+                    Telegram
+                </a>
+                <a href="https://discord.gg/ReviveCoin" class="neon-hover" aria-label="Discord">
+                    Discord
+                </a>
+            </div>
+        </div>
+    </section >
+
+    <!-- Legal Section -->
+    <section id="legal" class="section-dark legal-content">
+        <div class="section-content">
+            <h2>Legal Information</h2>
+            <div class="disclaimer">
+                <h3>Disclaimer</h3>
+                <p>ReviveCoin is a decentralized cryptocurrency project. Purchasing RVN tokens involves significant risks. Cryptocurrency investments are speculative and volatile and you could lose some or all of your investment. Conduct thorough research and consult a financial advisor before investing in cryptocurrency.</p>
+                <h3>Risk Warning</h3>
+                <p>By participating in the ReviveCoin project, you acknowledge and agree to the inherent risks associated with cryptocurrencies and decentralized finance. You are solely responsible for your investment decisions.</p>
+            </div>
+        </div>
+    </section >
+
     <!-- Footer -->
     <footer class="neon-border">
-        <div class="footer-content">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <a href="#about">About</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#presale">Presale</a>
+                <a href="#community">Community</a>
+            </div>
             <div class="footer-section">
                 <h4>Contact</h4>
                 <p>contact@revivecoin.com</p>
             </div>
             <div class="footer-section">
                 <h4>Legal</h4>
-                <p>Disclaimer & Risk Warning</p>
+                <a href="#legal">Disclaimer & Risk Warning</a>
             </div>
             <div class="footer-section">
                 <h4>Community</h4>
                 <div class="social-links">
-                    <a href="#" class="neon-hover">Twitter</a>
-                    <a href="#" class="neon-hover">Telegram</a>
-                    <a href="#" class="neon-hover">Discord</a>
+                    <a href="https://twitter.com/ReviveCoin" class="neon-hover" aria-label="Twitter">
+                        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.068-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
+                    </a>
+                    <a href="https://t.me/ReviveCoinOfficial" class="neon-hover" aria-label="Telegram">
+                        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 8.295c.22-.013.438.08.583.23.144.148.22.353.21.564-.01.21-.09.413-.24.56-.15.148-.354.22-.564.21-.21-.01-.413-.09-.56-.24-.148-.15-.22-.354-.21-.564.01-.21.09-.413.24-.56.147-.147.352-.22.562-.21zm-7.5 2.5c.22-.013.438.08.583.23.144.148.22.353.21.564-.01.21-.09.413-.24.56-.15.148-.354.22-.564.21-.21-.01-.413-.09-.56-.24-.148-.15-.22-.354-.21-.564.01-.21.09-.413.24-.56.147-.147.352-.22.562-.21zm7.5 2.5c.22-.013.438.08.583.23.144.148.22.353.21.564-.01.21-.09.413-.24.56-.15.148-.354.22-.564.21-.21-.01-.413-.09-.56-.24-.148-.15-.22-.354-.21-.564.01-.21.09-.413.24-.56.147-.147.352-.22.562-.21zm-7.5 2.5c.22-.013.438.08.583.23.144.148.22.353.21.564-.01.21-.09.413-.24.56-.15.148-.354.22-.564.21-.21-.01-.413-.09-.56-.24-.148-.15-.22-.354-.21-.564.01-.21.09-.413.24-.56.147-.147.352-.22.562-.21z"></path></svg>
+                    </a>
+                    <a href="https://discord.gg/ReviveCoin" class="neon-hover" aria-label="Discord">
+                        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.453 16.022c-.424.38-.94.682-1.533.904-1.32.526-2.946.804-4.82.804-1.874 0-3.498-.278-4.819-.804-.592-.222-1.109-.524-1.532-.904-.643-.58-1.14-1.322-1.416-2.178-.118-.363-.175-.734-.175-1.115 0-1.791.958-3.252 2.315-3.938.08-.043.16-.086.24-.127.443-.223.91-.41 1.39-.563.48-.154.973-.27 1.47-.35.713-.113 1.44-.19 2.17-.23.017-.002.034-.004.05-.005 2.448-.06 4.65-.06 6.304 0 .017.002.034.004.05.005.73.04 1.457.117 2.17.23.497.08 0.99.196 1.47.35.48.153.947.34 1.39.563.08.04 0.16.083.24.127 1.357.686 2.315 2.147 2.315 3.938 0 .381-.057.752-.175 1.115-.276.856-.773 1.598-1.416 2.178zM16.5 13.5c-1.375 0-2.5 1.125-2.5 2.5s1.125 2.5 2.5 2.5 2.5-1.125 2.5-2.5-1.125-2.5-2.5-2.5zm-9 0c-1.375 0-2.5 1.125-2.5 2.5s1.125 2.5 2.5 2.5 2.5-1.125 2.5-2.5-1.125-2.5-2.5-2.5zm9-5c-1.375 0-2.5 1.125-2.5 2.5s1.125 2.5 2.5 2.5 2.5-1.125 2.5-2.5-1.125-2.5-2.5-2.5zm-9 0c-1.375 0-2.5 1.125-2.5 2.5s1.125 2.5 2.5 2.5 2.5-1.125 2.5-2.5-1.125-2.5-2.5-2.5z"></path></svg>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="wallet.js"></script>
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html> 
